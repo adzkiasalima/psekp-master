@@ -1,0 +1,340 @@
+﻿/*!
+ * BLOCKS - Responsive Dashboard Theme
+ * Created by: Carlos Alvarez
+ * Developed by: PSEKP
+ * URL: http://Alvarez.is
+ * Designed and built based on Twitter Bootstrap.
+ */
+ 
+/* REFERENSI WARNA
+- #ebebeb (Background Color)
+- #3d3d3d (Dash-unit) 
+- #262626 (Footer) 
+- #fa1d2d (Red - Used in selectors, parragraphs, bars and other) 
+- #b2c831 (Green - Used in titles, badges, bars and other) 
+- #bdbdbd & #fff (Font colors)
+*/
+
+
+/*KONFIGURASI DASAR*/   
+body {
+	background:#ebebeb;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*KONFIGURASI UKURAN HURUF*/  
+h1 {
+font-family: 'Raleway', sans-serif;}
+
+h3,h4 , h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:lighter;
+}
+
+h2{
+	font-size:22px;
+	
+}
+
+h3 {
+	font-size:46px;
+	color:#b2c831;
+}
+
+h5 {
+	color:#b2c831;
+	margin-left:5px;
+}
+
+.title {
+	font-family: 'Raleway', sans-serif;
+	font-weight:300;
+	font-size: 20px;
+	line-height: 2px;
+	letter-spacing: 0px;
+	color: #000000;
+	padding-top:10px;
+	padding-left:5px;
+	margin-top:2px;
+	margin-bottom:20px;
+	text-align:center;
+}
+/*BLOCKS & WRAPS*/
+
+/*--- Dash Unit / Digunakan di halaman index.html -*/
+.dash-unit {		
+	margin-bottom: 30px;
+	padding-bottom:10px;
+	border: 1px solid #383737;
+	background-image:url('../img/sep-half.png');
+	background-color: #3d3d3d;
+	color:white;
+	height:290px;
+	-moz-box-shadow:    3px 3px 2px 0px #151515;
+    -webkit-box-shadow: 3px 3px 2px 0px #151515;
+    box-shadow:         3px 3px 2px 0px #151515;
+}
+
+.dash-unit:hover{
+background-color: #4f4f4f;
+-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform:scale(1.1);
+	-moz-transition:all .10s linear 0s;
+	-webkit-transition:all .10s linear 0s;
+	
+	z-index:5;
+}
+
+.dash-unit dtitle {
+	font-size:16px;
+	text-transform:uppercase;
+	align-text:center;
+	color:#ffffff;
+	margin:8px;
+	padding:0px;
+	height:inherit	
+	}
+	
+.dash-unit hr {
+  	border: 0;
+  	border-top: 1px solid #ebebeb;
+  	border-top-style: line;
+	margin-top:3px;
+}
+
+.dash-unit h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight:300;
+	font-size: 20px;
+	line-height: 2px;
+	letter-spacing: 0px;
+	color: #ffffff;
+	padding-top:10px;
+	padding-left:5px;
+	margin-top:2px;
+	text-align:center;
+}
+
+.dash-unit h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 26px;
+	letter-spacing: 0px;
+	color: #ffffff;
+	padding-top:10px;
+	padding-left:5px;
+	margin-top:2px;
+	text-align:center;
+}
+
+
+.dash-unit h3 {
+    font-family: 'Open Sans';
+	
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0px;
+	color: #b2c831;
+	padding-top:3px;
+	padding-left:5px;
+	margin-top:2px;
+	text-align:center;
+}
+
+
+.dash-unit p {
+	font-size: 14px;
+	font-weight: 200;
+	line-height: 16px;
+	color: inherit;
+	margin: 0 0 10px;
+	padding:5px;
+ }
+
+.dash-unit h4 {
+	padding-left:5px;
+	margin-top:2px;
+	font-size: 13px;
+	font-weight:lighter;
+	line-height: 1;
+	letter-spacing: 0px;
+	color: #fff;
+}
+
+.dash-unit bold{
+	font-family: 'Open Sans', sans-serif;
+	font-size:26px;
+	font-weight:bold;
+	color:#fff;
+	vertical-align:middle;
+}
+
+
+/***********Bootstrap Default Modifications***********/
+
+.thumbnail {
+	border:0px;
+	text-align:center;
+  -webkit-box-shadow: 0px;
+     -moz-box-shadow: 0px;
+          box-shadow: 0px;
+    background: none;
+    text-align: center;      
+}
+
+
+input[type=submit] {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	background: #b2c831;
+	color: #fff;
+	border: none;
+	padding: 8px 28px 10px 26px;
+	  *-webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+
+}
+input[type=text], textarea {
+	background: #cdcbcc;
+	font-size: 13px;
+	display: block;
+	width: 100%;
+	border: none;
+	box-shadow: none;
+	height: 30px;
+	line-height: 18px;
+	padding: 0;
+	text-indent: 18px;
+	margin: 0 0 18px;
+}
+textarea {
+	line-height: 18px;
+	padding: 18px;
+	width: 100%;
+	text-indent: 0;	
+}
+.textarea-container { margin: 0 18px; }
+.textarea-container textarea { margin-left: -18px; }
+#contact textarea { width: 100%; height: 45px; }
+
+
+.progress-bar {
+	background-color: #b2c831;
+}
+
+/**********FooterWrap Section**********/   
+#footerwrap {
+    
+    width: 100%;
+    background:#262626;
+	background-image:url('../img/sep-half.png');
+    padding-top:25px;
+    padding-bottom: 40px;
+	border-top-style: solid;
+    border-top-width:8px;
+    border-top-color:#1d1d1d;
+    text-align:center
+
+}
+
+#footerwrap p {
+    font-family: 'Raleway';
+	font-weight:500;
+	color:grey;
+	font-size:12px;
+} 
+
+#footerwrap h2 {
+    font-family: 'Raleway';
+	font-weight:500;
+	color:#b2c831;
+	font-size:16.5px;
+	text-align:left;
+	font-weight:300;
+	line-height: 2px;
+	letter-spacing: 0px;
+} 
+
+#footerwrap h3 {
+    font-family: 'Raleway';
+	font-weight:500;
+	color:white;
+	font-size:15px;
+	text-align:left;
+	font-weight:300;
+	line-height: 2px;
+	letter-spacing: 0px;
+} 
+
+#footerwrap h4 {
+    font-family: 'Open Sans';
+	font-weight:500;
+	color:white;
+	font-size:13px;
+	text-align:left;
+	font-weight:300;
+	line-height: 18px;
+	letter-spacing: 0px;
+} 
+
+#footerwrap h5 {
+    font-family: 'Open Sans';
+	color:#b2c831;
+	font-size:13px;
+	text-align:left;
+	font-weight:300;
+	line-height: 15px;
+	letter-spacing: 0px;
+} 
+
+
+#fsub1, #fsub2 {
+	margin:0px 0 0 0;
+}
+#fsub1, #fsub2{
+	border-right:1px solid #777;
+	border-left:1px solid #777;
+}
+
+#fsub1 {
+	padding:0 0 0px 0;
+}    
+
+/**********Media Styles**********/   
+
+
+@media (max-width: 360px){
+/*Calendar Adsjustments*/
+.fc-header {margin-top:15px;}
+.fc-header-title h2{font-size:10px; }
+.fc-header-right {display:none}
+
+/* portrait tablet */
+@media (min-width: 767px) and (max-width: 768px) {
+	.info-aapl ul {
+  		margin-left:10px;
+  		float:left;
+}
+
+#load {
+	margin-left:5px;
+	margin-right:10px;
+}
+
+#space {
+	margin-left:5px;
+	margin-right:10px;
+}
+
+}
+
+/* Landscape iphone 5 and samsung galaxy */
+@media (min-width: 560px) and (max-width: 685px) {
+	.info-aapl ul {
+  		margin-left:40%;
+}
+
+}
