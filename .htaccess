@@ -2,15 +2,12 @@
 # more here: http://stackoverflow.com/q/20918746/1114320
 Options -MultiViews
 
+<IfModule mod_rewrite.c>
 # turn rewriting on
 RewriteEngine On
 
-# When using the script within a sub-folder, put this path here, like /mysubfolder/
-# If your app is in the root of your web folder, then please delete this line or comment it out
-RewriteBase /php-login/
+RewriteBase /psekp_pkl
 
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-l
-
-RewriteRule ^(.+)$ index.html?url=$1 [QSA,L]
+# Rewrite URLs ending in /index.php or /index.html to /
+RewriteCond %{THE_REQUEST} ^GET\ .*/index\. (php/html?)\ HTTP
+RewriteRule ^(.*)index\.(php|html?)$ $1 [R=301,L]
